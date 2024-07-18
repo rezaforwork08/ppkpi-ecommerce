@@ -1,6 +1,6 @@
 <?php
 if (!isset($_SESSION['id_member'])) {
-    header("location:?pg=member&message=Upss-Harus-Register-Dulu")
+    header("location:?pg=member&message=Upss-Harus-Register-Dulu");
 }
 ?>
 <!-- Start Hero Section -->

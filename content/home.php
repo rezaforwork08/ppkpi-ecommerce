@@ -39,15 +39,19 @@ $queryProduk = mysqli_query($koneksi, "SELECT * FROM barang ORDER BY id DESC LIM
             <!-- Start Column 2 -->
             <?php while ($rowProduk = mysqli_fetch_assoc($queryProduk)) : ?>
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="?pg=cart">
-                        <img src="admin/upload/<?= $rowProduk['foto'] ?>" class="img-fluid product-thumbnail">
-                        <h3 class="product-title"><?= $rowProduk['nama_barang'] ?></h3>
-                        <strong class="product-price"><?= "Rp. " . number_format($rowProduk['harga']) ?></strong>
+                    <form action="?pg=action-cart" method="post">
+                        <button style="border:none" type="submit" class="product-item">
+                            <img src="admin/upload/<?= $rowProduk['foto'] ?>" class="img-fluid product-thumbnail">
+                            <h3 class="product-title"><?= $rowProduk['nama_barang'] ?></h3>
+                            <strong class="product-price"><?= "Rp. " . number_format($rowProduk['harga']) ?></strong>
 
-                        <span class="icon-cross">
-                            <img src="asset/fe/images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
+                            <span class="icon-cross">
+                                <img src="asset/fe/images/cross.svg" class="img-fluid">
+                            </span>
+                        </button>
+
+
+                    </form>
                 </div>
             <?php endwhile ?>
             <!-- End Column 2 -->
