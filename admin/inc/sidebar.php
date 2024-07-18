@@ -100,9 +100,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../layout/fixed-sidebar-custom.html" class="nav-link">
+                            <a href="?pg=member" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Fixed Sidebar <small>+ Custom Area</small></p>
+                                <p>Member</p>
                             </a>
                         </li>
                         <li class="nav-item">
