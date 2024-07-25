@@ -1,5 +1,7 @@
 <?php
 session_start();
+// print_r($_SESSION);
+// die;
 include 'admin/koneksi/koneksi.php';
 ?>
 <!-- /*
